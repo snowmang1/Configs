@@ -142,6 +142,10 @@ if [[ -x "$(command -v vi)" ]]; then
 	# I betrayed vim and now I am on the dark side
 	alias vi="nvim"
 fi
+if [[ -x "$(command -v less)" ]]; then
+	# using nvim as less due to better syntax highlighting
+	alias less="/opt/homebrew/Cellar/neovim/0.7.2/share/nvim/runtime/macros/less.sh"
+fi
 # rust compiler work
 alias x.py='python3 x.py'
 
